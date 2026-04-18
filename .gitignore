@@ -1,0 +1,15 @@
+# UE4 generated/cache folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# IDE files
+.vs/
+.vscode/
+*.sln
+*.suo
+
+# OS files
+Thumbs.db
+.DS_Store
