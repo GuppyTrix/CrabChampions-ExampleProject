@@ -38,8 +38,9 @@ UE4Editor-Cmd.exe GameProjectGenerator.uproject -run=ProjectGenerator -HeaderRoo
 ## Setup
 
 1. Clone this repository:
+
    ```
-   git clone <repo-url>
+   git clone <https://github.com/GuppyTrix/CrabChampions-ExampleProject.git>
    ```
 
 2. Configure the paths in `Tools/user_settings/`:
