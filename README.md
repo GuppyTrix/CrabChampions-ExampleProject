@@ -13,12 +13,15 @@ These stubs allow you to reference the game's classes, structs, and enums in you
 ## Contents
 
 - `CrabChampions.uproject` - The project file (UE 4.27)
-- `Source/CrabChampions/Public/` - 216 header files (.h) with class/struct/enum declarations
-- `Source/CrabChampions/Private/` - 159 source files (.cpp) with minimal stub implementations
+- `Source/CrabChampions/Public/` - Header files (.h) with class/struct/enum declarations
+- `Source/CrabChampions/Private/` - Source files (.cpp) with minimal stub implementations
 - `Source/CrabChampions/CrabChampions.Build.cs` - Build configuration with module dependencies
 - `Source/CrabChampionsEditor.Target.cs` - Editor build target
 - `Source/CrabChampionsGame.Target.cs` - Game build target
 - `Plugins/EnginePlugins/` - Engine plugin stubs required by the game
+- `Content/` - Placeholder content
+- `cook_assets.bat`, `package.bat`, `run_all.bat` - Build scripts from [Dolton's CrabChampions-Modkit](https://github.com/Dolton20/CrabChampions-Modkit)
+- `Tools/` - Modkit tooling (packing scripts, user settings, config)
 
 ## How This Was Generated
 
@@ -32,12 +35,23 @@ UE4Editor-Cmd.exe GameProjectGenerator.uproject -run=ProjectGenerator -HeaderRoo
 
 ## Usage
 
-To use this as a base for your own mod:
+## Setup
 
-1. Copy this project to a new location
-2. Open `CrabChampions.uproject` with UE 4.27
-3. Add your own Blueprint or C++ classes that reference the game's types
-4. Use [Dolton's CrabChampions-Modkit](https://github.com/Dolton20/CrabChampions-Modkit) build scripts to cook and package your mod
+1. Clone this repository:
+   ```
+   git clone <repo-url>
+   ```
+
+2. Configure the paths in `Tools/user_settings/`:
+   - `editor_directory.txt` - path to your UE4 4.27 editor `Binaries/Win64` directory
+   - `game_directory.txt` - path to your Crab Champions game installation
+   - `package_output.txt` - output path for the packaged `.pak` file
+
+3. Open `CrabChampions.uproject` with UE 4.27
+
+4. Add your own Blueprint or C++ classes that reference the game's types
+
+5. Use the build scripts (`cook_assets.bat`, `package.bat`, or `run_all.bat`) to cook and package your mod
 
 ## License
 
