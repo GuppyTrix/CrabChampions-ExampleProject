@@ -4,6 +4,8 @@ This is an example UE4 project containing C++ stub headers and source files gene
 
 These stubs allow you to reference the game's classes, structs, and enums in your own Blueprint or C++ mods without needing the actual game source code.
 
+I used Doltons modkit to cook and package the project <https://github.com/Dolton20/CrabChampions-Modkit> and the generated .pak file works in the game and can be loaded with Doltons BPLoader.
+
 ## Version Info
 
 - **Game branch:** Main (not beta)
