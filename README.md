@@ -18,9 +18,6 @@ I used Doltons modkit to cook and package the project <https://github.com/Dolton
 - `Source/CrabChampions/Public/` - Header files (.h) with class/struct/enum declarations
 - `Source/CrabChampions/Private/` - Source files (.cpp) with minimal stub implementations
 - `Source/CrabChampions/CrabChampions.Build.cs` - Build configuration with module dependencies
-- `Source/CrabChampionsEditor.Target.cs` - Editor build target
-- `Source/CrabChampionsGame.Target.cs` - Game build target
-- `Plugins/EnginePlugins/` - Engine plugin stubs required by the game
 - `Content/` - Placeholder content
 - `cook_assets.bat`, `package.bat`, `run_all.bat` - Build scripts from [Dolton's CrabChampions-Modkit](https://github.com/Dolton20/CrabChampions-Modkit)
 - `Tools/` - Modkit tooling (packing scripts, user settings, config)
@@ -52,7 +49,7 @@ UE4Editor-Cmd.exe GameProjectGenerator.uproject -run=ProjectGenerator -HeaderRoo
 
 3. Open `CrabChampions.uproject` with UE 4.27
 
-4. Add your own Blueprint or C++ classes that reference the game's types
+4. Add your own Blueprint classes that reference the game's types
 
 5. Use the build scripts (`cook_assets.bat`, `package.bat`, or `run_all.bat`) to cook and package your mod
 
